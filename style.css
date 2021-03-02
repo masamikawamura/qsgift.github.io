@@ -1,0 +1,256 @@
+html{
+    background-color:black;
+    font-size: 3vw;
+}
+header ul{
+    list-style-type: none;
+    padding-left:3pX;
+    padding-right:3px;
+}
+header li{
+    width: 40px;
+    height: 50px;
+    padding: 3px;
+    margin: 3px;  
+}
+.inline{ 
+     text-align: center;
+ }   
+.inline li{
+     display: inline;
+ }
+ header{
+    grid-area: header;
+    background-color:white;
+    display:inline-flex;
+    padding-left: 3px;
+    padding-right: auto;
+    font-size: 13px;
+    font-family: initial;
+    font-weight: 20px;
+    border-bottom-style:solid;
+    border-color:gray;
+}
+header li{
+    display:inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: black;
+    color:white;
+    border-bottom: solid 4px #627295;
+    border-radius: 2px;
+}
+header li:active{
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+a{
+    color:white
+}
+body{
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: auto;
+    text-align: center;
+    display: grid;
+    grid-template:
+    "...  .....        .....        .....        .....    .....     ..."10px
+    "...  header       header       header       header   header    ..."55px
+    "...  hyoudai      hyoudai      hyoudai      hyoudai  hyoudai   ..."42vw
+    "...  hyoudaii     hyoudaii     hyoudaii     hyoudaii hyoudaii  ..."auto
+    "...  osirase      osirase      osirase      osirase  osirase   ..."auto
+    "...  snpuru       snpuru       snpuru       koukoku  koukoku   ..."auto
+    "...  sa-bisu      sa-bisu      sa-bisu      koukoku  koukoku   ..."auto
+    "...  kaisyaannai  kaisyaannai  kaisyaannai  koukoku  koukoku   ..."auto
+    "...  ryoukinn     ryoukinn     ryoukinn     koukoku  koukoku   ..."auto
+    "...  footer       footer       footer       footer   footer    ..."200px
+    "...  .....        .....        .....        .....    .....     ..."10px
+    /0    2.5fr        2.5fr         2.5fr        1fr      1fr        0;
+}
+
+h1{
+    grid-area: hyoudai;
+    background-image: url(image/logo_p31.png) ;
+    background-repeat:no-repeat;
+    background-size: 20vw;
+    background-position:left;
+    width: 100%;
+    max-width: 100%;
+
+    
+}
+.hyoudai{
+    font-size: 100px;
+    font-size: 15vw;
+    text-shadow: 10px 0 0 rgb(236, 6, 6);
+    color: rgb(247, 241, 241);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px auto 10px auto;
+    
+}
+div{
+    grid-area: hyoudaii;
+    font-size: 20px;
+    font-size: 3vw;
+    text-shadow: 2px 0 0 rgb(240, 6, 6);
+    color: rgb(247, 243, 243);
+   
+}
+
+.snpuru p{
+    font-size: 15px;
+}
+.osirase{
+    grid-area: osirase;
+    background-color:white;
+    margin: 0;
+    font-size: 20px;
+    border-style:solid;
+    border-color:gray;
+}
+.osirase li{
+    font-size: 15px;
+    padding-left: auto;
+    text-align:left;
+}
+
+.snpuru {
+    grid-area: snpuru;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+    color:white;
+    font-size: 5vw;
+}
+
+
+
+.snpuru ul{
+    list-style-type: none;
+}
+.snpuru p{
+    font-size: 3vw;
+}
+
+.snpuru img{
+    width: 20%;
+    max-width: 20%;
+    height: auto;
+    margin-right:6vw;
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 5%;
+    border-style: solid;
+    border-color: tomato;
+}
+
+
+aside{
+    grid-area: koukoku;
+    background-color:white;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+}
+h4{
+    grid-area: sa-bisu;
+    background-color:white;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+    font-size: 30px;
+    font-size: 5vw;
+}
+h4 p{
+    font-size: 15px;
+    font-size: 3vw;
+    border-bottom-style:dotted;
+    border-color:thistle;
+    
+}
+h5{
+    grid-area: kaisyaannai;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+    font-size: 30px;
+    font-size: 5vw;
+    color: white;
+}
+h5 p{
+    font-size: 15px;
+    font-size: 3vw;
+    border-bottom-style:dotted;
+    border-color:gray;
+}
+h6{
+    grid-area: ryoukinn;
+    background-color:white;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+    font-size: 30px;
+    font-size: 5vw;
+    border-bottom-style:dotted;
+    border-color:gray;
+}
+h6 p{
+    font-size: 15px;
+    font-size: 3vw;
+    border-bottom-style:dotted;
+    border-color:thistle;
+}
+footer{
+    grid-area: footer;
+    margin: 0; border-style:solid;
+    border-color:gray;
+    color: gray;
+}
+
+
+
+@media(max-width:767px) {   
+    body{
+        grid-template: 
+       
+    /* "...  .....        .....        .....        .....        .....         ..."10px
+    "...  header       header       header       header       header        ..."55px
+    "...  hyoudai      hyoudai      hyoudai      hyoudai      hyoudai       ..."42vw
+    "...  hyoudaii     hyoudaii     hyoudaii     hyoudaii     hyoudaii      ..."auto
+    "...  osirase      osirase      osirase      osirase      osirase       ..."auto
+    "...  snpuru       snpuru       snpuru       snpuru       snpuru        ..."auto
+    "...  sa-bisu      sa-bisu      sa-bisu      sa-bisu      sa-bisu       ..."auto
+    "...  kaisyaannai  kaisyaannai  kaisyaannai  kaisyaannai  kaisyaannai   ..."auto
+    "...  ryoukinn     ryoukinn     ryoukinn     ryoukinn     ryoukinn      ..."auto
+    "...  koukoku      koukoku      koukoku      koukoku      koukoku       ..."auto
+    "...  footer       footer       footer       footer       footer        ..."200px
+    "...  .....        .....        .....        .....        .....         ..."10px
+    /0    2.5fr        2.5fr         2.5fr       1fr          1fr            0; */
+    "....."10px
+    "header"55px
+    "hyoudai"42vw
+    "hyoudaii"auto
+    "osirase"auto
+    "snpuru"auto
+    "sa-bisu"auto
+    "kaisyaannai"auto
+    "ryoukinn"auto
+    "koukoku"auto
+    "footer"200px
+    "....."10px
+    /1fr;
+}
+}
+ .snpuru img{
+     float: block;
+ }
+ @media(max-width:321px) { 
+     header{
+       font-size: 11px;
+     }
+    }
