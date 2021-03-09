@@ -1,0 +1,261 @@
+html{
+    background-color:lavenderblush;
+    font-size: 3vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: auto;
+    text-align: center;
+    display: grid;
+    grid-template:
+    "...  .....     .....     ..."10px
+    "...  hyoudai   hyoudai   ..."42vw
+    "...  hyoudaii  hyoudaii  ..."auto
+    "...  snpuru   koukoku   ..."auto 
+    "...  main      koukoku   ..."auto
+    "...  footer    footer    ..."auto
+    "...  .....     .....     ..."10px
+    /0 auto      300px        10px;
+}
+
+
+
+  /* header{
+    grid-area: header;
+    background-color:white;
+    display:inline-flex;
+    padding-left: 3px;
+    padding-right: auto;
+    font-size: 13px;
+    font-family: initial;
+    font-weight: 20px;
+    border-bottom-style:solid;
+    border-color:gray;
+    grid-area: hyoudai;
+    background-image: url(image/logo_p31.png) ;
+    background-repeat:no-repeat;
+    background-size: 20vw;
+    background-position:left;
+    width: 100%;
+    max-width: 100%;
+} */
+ 
+a{
+    color:black;
+}
+
+
+header {
+    grid-area: hyoudai;
+}
+.hyoudai {
+    width: auto;
+    height: 42vw;
+    margin: 0;
+
+}
+    
+
+.hyoudaii{
+    grid-area:hyoudaii;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+    color:dimgra;
+}
+.snpuru{
+    font-size: 30px;
+}
+.snpuru p{
+    font-size: 15px;
+}
+
+
+.mihon {
+    grid-area: snpuru;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+    color:dimgray;
+    font-size: 5px;
+}
+
+
+.snpurugazou ul{
+    list-style-type: none;
+   
+}
+
+
+.snpurugazou img{
+    width: 20vw;
+    
+    height: auto;
+    margin-right:3vw;
+    margin-bottom: 20px;
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 5%;
+    border-style: solid;
+    border-color: tomato;
+    text-align: center;
+}
+main{
+    grid-area:main;
+
+}
+.tab {
+    width: auto;
+  }
+  .tab-nav {
+    display: flex;
+    width:fr;
+  }
+  .tab-nav-item {
+    margin-right: 4px;
+    background:white;
+    color:cornflowerblue;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+    font-size: 18px;
+    
+  }
+  .tab-nav-item.is-active {
+    background:cornflowerblue;
+    color: #fff;
+  }
+  .tab-contents {
+    border: 3px solid cornflowerblue;
+    padding: 20px;
+  }
+  .tab-contents-item {
+    display: none;
+  }
+
+
+aside{
+    grid-area: koukoku;
+    background-color:white;
+    margin: 0;
+    border-style:solid;
+    border-color:gray;
+   
+    
+}
+.tubuyaki{
+    background-color: white;
+}
+.tubuyaki p{
+    font-size: 15px;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.koukoku{
+    width: 250px;
+    height: 150px;
+    color: #000;
+    background-color: royalblue;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.kaisyaannai h2{
+    font-size: 30px;
+}
+.kaisyaannai p{
+    font-size: 15px;
+    
+}
+
+.ryoukinn p{
+    font-size: 13px;
+}
+.sa-bisu{
+
+    background-color:white;
+    margin: 0;
+    font-size: 20px;
+}
+.sa-bisu p{
+    font-size: 13px;
+}
+
+    
+
+.kaisyaannai{
+    background-color:white;
+    margin: 0;
+    font-size: 30px;
+    font-size: 5vw;
+    color:black;
+}
+
+.ryoukinn{
+    background-color:white;
+    margin: 0;
+    font-size: 20px;
+    border-color:gray;
+}
+
+
+footer{
+    grid-area: footer;
+    margin: 0; 
+    border-style:solid;
+    border-color:gray;
+    color: gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.inline{
+    display:inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background:cornflowerblue;
+    color:white;
+    border-bottom: solid 4px #627295;
+    border-radius: 2px;
+}
+
+
+.inline:active{
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+} 
+
+
+
+@media(max-width:767px) {   
+    body{
+        grid-template: 
+    
+    "....."5px
+    "hyoudai"auto
+    "hyoudaii"auto
+    "snpuru"auto
+    "main"auto
+    "koukoku"auto
+    "footer"auto
+    "....."30px
+    /1fr;
+}
+.tab-nav-item {
+    font-size: 10px;
+}
+}
+ .snpuru img{
+     float: block;
+ }
+ 
+
+ 
